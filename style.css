@@ -32,6 +32,12 @@ body {
    
 }
 
+.clock:hover {
+    transform: scale(2); /* Scale up to 2x size on hover */
+    cursor: pointer;
+    
+  }
+
 .clock span {
     position: absolute;
     transform: rotate(calc(30deg * var(--i)));
@@ -53,6 +59,7 @@ body {
     height: 8px;
     border-radius: 50%;
     background-color: #fff;
+    z-index: 2;
 }
 
 .hand {
@@ -65,7 +72,7 @@ body {
 .hand i{
     position: absolute;
     width: 4px;
-    height: 70px;
+    height: var(--h);
     border-radius: 8px;
     background-color: var(--clr);
 }
